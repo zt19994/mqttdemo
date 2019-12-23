@@ -1,6 +1,5 @@
 package com.mqtt.mqttserver.util;
 
-import com.mqtt.mqttclient.client.PushCallback;
 import lombok.Data;
 import org.eclipse.paho.client.mqttv3.*;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
@@ -116,6 +115,5 @@ public class ServerMqttUtil {
         logger.info("Disconnected: delivery token \"" + token.hashCode() + "\" received: " + token.isComplete());
         logger.info(message.isRetained() + "------ratained状态");
     }
-
 
 }
